@@ -1,0 +1,18 @@
+# rhythm.sh config — copy to ./rhythm.yaml or ~/.config/rhythm/config.yaml
+
+# How often to re-poll GitHub. Accepts seconds (120) or "90s" / "2m" / "1h".
+refresh: 90s
+
+# Max card columns. Omit for auto (fit as many as the terminal allows).
+# columns: 1
+
+repos:
+  - repo: problemsdev/rhythm
+  - repo: anomalyco/opentui
+
+  # Full form: repo + jump-off links (opened with keys 1-9).
+  # - repo: problemsdev/p
+  #   links:
+  #     logs: https://axiom.co/org-id/dashboard
+  #     analytics: https:///us.posthog.com/project/project-id/web
+  #     uptime: https://status.problems.dev
