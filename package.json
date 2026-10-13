@@ -1,6 +1,6 @@
 {
   "name": "@problemsdev/rhythm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "rhythm.sh — a skimmable terminal dashboard for your GitHub repos",
   "license": "MIT",
   "type": "module",
