@@ -14,5 +14,5 @@ repos:
   # - repo: problemsdev/p
   #   links:
   #     logs: https://axiom.co/org-id/dashboard
-  #     analytics: https:///us.posthog.com/project/project-id/web
+  #     analytics: https://us.posthog.com/project/project-id/web
   #     uptime: https://status.problems.dev

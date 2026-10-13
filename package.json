@@ -2,10 +2,37 @@
   "name": "@problemsdev/rhythm",
   "version": "0.1.0",
   "description": "rhythm.sh — a skimmable terminal dashboard for your GitHub repos",
-  "module": "src/index.tsx",
-  "type": "module",
   "license": "MIT",
+  "type": "module",
+  "module": "src/index.tsx",
   "bin": { "rhythm": "src/index.tsx" },
+  "files": [
+    "src",
+    "tsconfig.json",
+    "rhythm.example.yaml",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/problemsdev/rhythm.git"
+  },
+  "homepage": "https://github.com/problemsdev/rhythm#readme",
+  "bugs": { "url": "https://github.com/problemsdev/rhythm/issues" },
+  "keywords": [
+    "github",
+    "dashboard",
+    "terminal",
+    "tui",
+    "cli",
+    "pull-requests",
+    "dependabot",
+    "ci",
+    "bun",
+    "opentui"
+  ],
+  "engines": { "bun": ">=1.2" },
+  "publishConfig": { "access": "public" },
   "scripts": {
     "start": "bun src/index.tsx",
     "dev": "bun --watch src/index.tsx",
