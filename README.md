@@ -49,6 +49,8 @@ Requires [Bun](https://bun.sh) 1.2 or newer.
 bun install -g @problemsdev/rhythm
 ```
 
+Check it landed on your `PATH` with `rhythm --version`.
+
 Or run it from a checkout:
 
 ```sh

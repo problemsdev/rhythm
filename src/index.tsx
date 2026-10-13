@@ -2,6 +2,7 @@
 import { createCliRenderer } from "@opentui/core"
 import { createRoot } from "@opentui/react"
 import { parseArgs } from "node:util"
+import pkg from "../package.json"
 import { loadConfig } from "./config"
 import { resolveToken } from "./github"
 import { App } from "./ui/App"
@@ -11,13 +12,19 @@ const { values } = parseArgs({
   options: {
     config: { type: "string", short: "c" },
     help: { type: "boolean", short: "h" },
+    version: { type: "boolean", short: "v" },
   },
 })
 
-if (values.help) {
-  console.log(`rhythm.sh — a skimmable terminal dashboard for your GitHub repos
+if (values.version) {
+  console.log(pkg.version)
+  process.exit(0)
+}
 
-usage: rhythm [--config <path>]
+if (values.help) {
+  console.log(`rhythm.sh v${pkg.version} — a skimmable terminal dashboard for your GitHub repos
+
+usage: rhythm [--config <path>] [--version] [--help]
 
 config is YAML (see rhythm.example.yaml); searched in:
   $RHYTHM_CONFIG, ./rhythm.yaml, ./rhythm.yml, ~/.config/rhythm/config.yaml
